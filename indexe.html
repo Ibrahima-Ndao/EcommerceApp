@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <script src="./index.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
     <style>
       /* Style pour positionner l'icône du panier en haut à droite */
       .panier-icon {
@@ -37,8 +37,9 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="productsList()">
     <!-- Icône du panier -->
+
     <div class="panier-icon" onclick="togglePanier()">
       <i class="fas fa-shopping-cart"></i>
     </div>
@@ -54,16 +55,6 @@
     <!-- Chargement de la bibliothèque Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
 
-    <script>
-      // Fonction pour afficher ou cacher le panier
-      function togglePanier() {
-        var panier = document.getElementById("panier");
-        if (panier.style.display === "none") {
-          panier.style.display = "block";
-        } else {
-          panier.style.display = "none";
-        }
-      }
-    </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
